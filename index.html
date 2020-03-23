@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Marvel Comics Search</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body onload="character()">
+    <div class="jumbotron">
+        <div class="=container">
+            <h1 class="header-main-title">Marvel Character search</h1>
+            <form id="connectionForm">
+
+                <div class="form-group">
+                    <input required type="text" name="name" id="name" class="form-control character-search-box"
+                        placeholder="(Ex, Hulk, Iron Man, Spider-Man, etc...)">
+                </div>
+                <input type="submit" value="search!" class="btn btn-danger wb-2 float right search-character-button">
+
+            </form>
+        </div>
+    </div>
+
+    <div class="container" id="container">
+
+        <div class="d-flex align-items-center" id="charactherSpinnerSection"></div>
+        <div class="d-flex align-items-center" id="comicsSpinnerSection"></div>
+
+        <section id="characterSection"></section>
+       
+        <section id="comicSection"></section>
+     </div>
+
+    <script src="main.js"></script>
+</body>
+   
+</body>
+</html>
